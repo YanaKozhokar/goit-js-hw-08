@@ -6,7 +6,7 @@ const formInputHandler = document.querySelector('.feedback-form');
 
 populateInputs();
 
-formInputHandler.addEventListener('input', _.throttle(onFormInputSave, 500));
+formInputHandler.addEventListener('input', throttle(onFormInputSave, 500));
 formInputHandler.addEventListener('submit', onFormSubmit);
 
 function populateInputs() {
